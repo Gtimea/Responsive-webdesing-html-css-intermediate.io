@@ -88,7 +88,7 @@
    <div class="row">
 <div class="left">
 	<p><progress value="3" max="5"></progress></p>
-	<form action="" method="post" enctype="multipart/form-data" name="attend" id="conference">	
+	<form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" id="conference">	
 	<fieldset>
 	<legend><span>Personal information</span></legend>
 	<label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z -._]{3.99}" required></label>
@@ -122,7 +122,7 @@
 	
 	<input type="submit" value="Sign me up!" class="submitBtn">
 
-	<input type="hidden" value="Conference registration" name="subject">
+	<input name="subject" type="hidden" value="Conference registration">
 	<input name="redirect" type="hidden" value="thanks.html">
 	
 	</form>
