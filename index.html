@@ -91,8 +91,8 @@
 	<form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" id="conference">	
 	<fieldset>
 	<legend><span>Personal information</span></legend>
-	<label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[0-9a-zA-Z -.]{3,99}" required></label>
-	<label><span>Address: </span><input name="address" type="text" value="" placeholder="Address" pattern="[0-9a-zA-Z -./]{3,99}" required></label>
+	<label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z -._áéíúóöő]{3,99}" required></label>
+	<label><span>Address: </span><input name="address" type="text" value="" placeholder="Address" pattern="[0-9a-zA-Z -./áéíúóöő]{3,99}" required></label>
 	<label><span>E-mail: </span><input name="email" type="email" value="" placeholder="xy@gmail.com" required></label>
 	<label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="701112222" pattern="[0-9]{9,20}" required></label>
 	</fieldset>
